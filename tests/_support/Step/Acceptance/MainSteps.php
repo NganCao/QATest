@@ -14,6 +14,7 @@ class MainSteps extends \AcceptanceTester
         $I->amOnPage(First::$URL);
         $I->waitForElementVisible(Sort::$sortIconOfId,2);
         $I->click(Sort::$sortIconOfId);
+        $I->pauseExecution();
     }
 
     /**
@@ -25,6 +26,7 @@ class MainSteps extends \AcceptanceTester
         $I->amOnPage(First::$URL);
         $I->waitForElementVisible(Sort::$sortIconOfType,2);
         $I->click(Sort::$sortIconOfType);
+        $I->pauseExecution();
     }
 
     /**
@@ -36,6 +38,7 @@ class MainSteps extends \AcceptanceTester
         $I->amOnPage(First::$URL);
         $I->waitForElementVisible(Sort::$sortIconOfTableId,2);
         $I->click(Sort::$sortIconOfTableId);
+        $I->pauseExecution();
     }
 
     /**
@@ -47,6 +50,7 @@ class MainSteps extends \AcceptanceTester
         $I->amOnPage(First::$URL);
         $I->waitForElementVisible(Sort::$sortIconOfNumberofPerson,2);
         $I->click(Sort::$sortIconOfNumberofPerson);
+        $I->pauseExecution();
     }
 
     /**
@@ -58,6 +62,7 @@ class MainSteps extends \AcceptanceTester
         $I->amOnPage(First::$URL);
         $I->waitForElementVisible(Sort::$sortIconOfDate,2);
         $I->click(Sort::$sortIconOfDate);
+        $I->pauseExecution();
     }
 
     /**
@@ -69,6 +74,7 @@ class MainSteps extends \AcceptanceTester
         $I->amOnPage(First::$URL);
         $I->waitForElementVisible(Sort::$sortIconOfDecription,2);
         $I->click(Sort::$sortIconOfDecription);
+        $I->pauseExecution();
     }
 
     /**
@@ -80,6 +86,7 @@ class MainSteps extends \AcceptanceTester
         $I->amOnPage(First::$URL);
         $I->waitForElementVisible(Sort::$sortIconOfDuration,2);
         $I->click(Sort::$sortIconOfDuration);
+        $I->pauseExecution();
     }
 
     /**
@@ -91,6 +98,7 @@ class MainSteps extends \AcceptanceTester
         $I->amOnPage(First::$URL);
         $I->waitForElementVisible(Sort::$sortIconOfStartTime,2);
         $I->click(Sort::$sortIconOfStartTime);
+        $I->pauseExecution();
     }
 
     /**
