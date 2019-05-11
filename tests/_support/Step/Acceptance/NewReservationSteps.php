@@ -114,6 +114,7 @@ class NewReservationSteps extends \AcceptanceTester
     {
         $I = $this;
         $I->waitForElementVisible(Second::$notExist);
+        $I->pauseExecution();
     }
 
     /**

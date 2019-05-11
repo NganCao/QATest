@@ -166,4 +166,14 @@ class MainSteps extends \AcceptanceTester
         $I->waitForElementVisible(First::$current2,2);
         $I->click(First::$current2);
     }
+
+    /**
+     * @throws \Exception
+     */
+    public function Home()
+    {
+        $I = $this;
+        $I->waitForElementVisible(First::$newReservation,2);
+    }
+
 }

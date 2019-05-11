@@ -123,5 +123,22 @@ class QATestCest
 //        $I->comment("Not yet caught error");
 //    }
 
-
+    /**
+     * @param First $I
+     * @param $scenario
+     * @throws Exception
+     */
+    public function CreateSameIdAndStartTime(First $I, $scenario)
+    {
+        $I->wantToTest("I want to create a new reservation same TableId and StartTime");
+        $I->CreateReservation();
+        $I = new Second($scenario);
+        $I->Create($this->tableID, $this->numberOfPerson, $this->date, $this->description, $this->startTime);
+        $I = new First($scenario);
+        $I->Home();
+        $I->CreateReservation();
+        $I = new Second($scenario);
+        $I->Create($this->tableID, $this->numberOfPerson, $this->date, $this->description, $this->startTime);
+        $I->Notification();
+    }
 }
